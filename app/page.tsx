@@ -38,7 +38,7 @@ export default function Portfolio() {
           style={{ opacity: heroOpacity, y: heroY, scale: heroScale }}
           className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
-          <div className="space-y-6">
+          <div className="hero-copy space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4 mt-4">
                 <span className="relative z-10">Network Engineer & Cabling Specialist</span>
@@ -102,7 +102,7 @@ export default function Portfolio() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="hero-visual flex justify-center">
             <CreativeHero />
           </div>
         </motion.div>
