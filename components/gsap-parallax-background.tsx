@@ -22,7 +22,15 @@ export function GsapParallaxBackground() {
         return
       }
 
-      gsap.timeline({ defaults: { ease: "power3.out" } })
+      gsap.timeline({
+        defaults: { ease: "power3.out" },
+        scrollTrigger: {
+          trigger: scene,
+          start: "top 70%",
+          end: "bottom top",
+          toggleActions: "play none none reverse",
+        },
+      })
         .fromTo(".hero-copy", { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 0.8 })
         .fromTo(".hero-visual", { autoAlpha: 0, scale: 0.94, y: 18 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.9 }, "-=0.55")
 
