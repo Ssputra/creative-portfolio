@@ -28,7 +28,7 @@ export function GsapParallaxBackground() {
           trigger: scene,
           start: "top 70%",
           end: "bottom top",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none restart reset",
         },
       })
         .fromTo(".hero-copy", { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 0.8 })
